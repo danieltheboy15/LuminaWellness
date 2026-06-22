@@ -6,7 +6,7 @@ export default function SemaliteDetail() {
   const cards = [
     {
       title: "Proven approach",
-      desc: "semaglutide, a trusted GLP-1 used worldwide",
+      desc: "a trusted GLP-1 receptor agonist used worldwide",
     },
     {
       title: "Reduces cravings",
@@ -37,10 +37,10 @@ export default function SemaliteDetail() {
 
             <div className="space-y-4 text-zinc-600 text-sm sm:text-base font-light leading-relaxed font-sans">
               <p>
-                Semalite is semaglutide — one of the most widely used GLP-1 treatments for weight loss worldwide. Like Zeplite, it works with your body’s natural appetite signals to help you feel full sooner and reduce cravings, making it easier to eat less without constant willpower battles.
+                Semalite contains one of the most widely used GLP-1 treatments for weight loss worldwide. Like Zeplite, it works with your body’s natural appetite signals to help you feel full sooner and reduce cravings, making it easier to eat less without constant willpower battles.
               </p>
               <p>
-                It’s also a once-weekly injection, stepped up gradually for the best results. Semalite is a strong option for those who prefer a semaglutide-based approach, and works best alongside healthier eating and movement for steady, lasting results.
+                It’s also a once-weekly injection, stepped up gradually for the best results. Semalite is a strong option for those who prefer a single strength-based approach, and works best alongside healthier eating and movement for steady, lasting results.
               </p>
             </div>
 

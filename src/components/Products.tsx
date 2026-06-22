@@ -62,7 +62,7 @@ export default function Products() {
               {/* Product Info */}
               <div className="space-y-3 text-left">
                 <h3 className="text-2xl sm:text-3xl font-display font-black text-zinc-900">
-                  Zeplite (Tirzepatide)
+                  Zeplite (Double Strength)
                 </h3>
                 <p className="text-sm sm:text-base text-zinc-650 font-light leading-relaxed">
                   Our flagship weight-loss treatment. A once-weekly pen, started low and stepped up gradually for the best results. Made affordable for Nigerians.
@@ -129,10 +129,10 @@ export default function Products() {
               {/* Product Info */}
               <div className="space-y-3 text-left animate-slide-up">
                 <h3 className="text-2xl font-display font-black text-white">
-                  Semalite (Semaglutide)
+                  Semalite (Single Strength)
                 </h3>
                 <p className="text-sm text-zinc-400 font-light leading-relaxed font-sans">
-                  A trusted GLP-1 weight-loss option. A once-weekly treatment for those who prefer a semaglutide-based approach. Made available locally.
+                  A trusted GLP-1 weight-loss option. A once-weekly treatment for those who prefer a single strength-based approach.
                 </p>
               </div>
 

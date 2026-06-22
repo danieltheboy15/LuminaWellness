@@ -17,12 +17,12 @@ export default function FAQ() {
     {
       id: "q1",
       question: "What is Zeplite?",
-      answer: "Zeplite is tirzepatide — a once-weekly weight-loss treatment and the same active ingredient used in leading GLP-1 medications worldwide. It’s made by Lumina Wellness."
+      answer: "Zeplite is a once-weekly weight-loss treatment and the same active ingredient used in leading GLP-1 medications worldwide. It works by two pathways, GLP-1 and GIP. It’s made by Lumina Wellness."
     },
     {
       id: "q2",
       question: "What is Semalite?",
-      answer: "Semalite is our semaglutide-based weight-loss treatment, also a once-weekly option."
+      answer: "Semalite is a GLP-1 receptor agonist that is popularly used as a weight-loss treatment, also a once-weekly option."
     },
     {
       id: "q3",

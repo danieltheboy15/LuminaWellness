@@ -92,7 +92,7 @@ export default function Footer() {
         </p>
         
         <p className="shrink-0 text-zinc-550 self-center md:self-end">
-          &copy; {currentYear} Lumina Wellness. All rights reserved.
+          &copy; 2026 Lumina Wellness. All rights reserved.
         </p>
       </div>
 

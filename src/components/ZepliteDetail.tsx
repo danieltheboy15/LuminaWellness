@@ -45,10 +45,7 @@ export default function ZepliteDetail() {
                 Zeplite works with your body’s natural appetite signals. It helps you feel full sooner, stay full longer, and quiet the constant food cravings that make weight loss feel impossible.
               </p>
               <p>
-                It’s a once-weekly injection, and the dose is stepped up gradually over time for the best results.
-              </p>
-              <p>
-                It’s not a fat burner, a tea, or a quick fix, but it’s real medication that works alongside healthier eating and movement for steady, lasting results.
+                It’s a once-weekly injection, and the dose is stepped up gradually over time for the best results. It’s not a fat burner, a tea, or a quick fix, but it’s real treatment that works alongside healthier eating and movement for steady, lasting results.
               </p>
             </div>
             

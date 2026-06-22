@@ -75,7 +75,7 @@ export default function WhoWeAre() {
                 Lumina Wellness is a Nigerian company making modern, effective weight-loss medication accessible to people here, at very affordable prices.
               </p>
               <p>
-                We offer two GLP-1 treatments: Zeplite (tirzepatide), our flagship, and Semalite (semaglutide). Both are the same active ingredients, used in leading weight-loss treatments worldwide, made available locally, so you get genuine, regulated products without paying imported, marked-up prices.
+                We offer two GLP-1 treatments: Zeplite (double receptor agonist), our flagship, and Semalite (GLP-1 receptor agonist). Both are the same active ingredients used in leading weight-loss treatments worldwide, made available locally, so you get genuine, regulated products without paying imported, marked-up prices.
               </p>
               <p>
                 If you’ve seen Zeplite or Semalite on social media and wondered whether we’re the real thing — yes, we are. We’re happy to answer any question before you order anything.
