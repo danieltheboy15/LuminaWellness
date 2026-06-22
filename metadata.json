@@ -1,0 +1,6 @@
+{
+  "name": "Lumina Wellness Landing Page",
+  "description": "Zeplite (tirzepatide) and Semalite (semaglutide) — Nigeria's affordable, weight-loss treatments by Lumina Wellness. Learn more and order today.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
