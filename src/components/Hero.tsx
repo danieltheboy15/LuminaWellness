@@ -53,23 +53,7 @@ export default function Hero() {
           We make genuine GLP-1 treatments accessible and affordable here at home. Real support with real results, at very affordable prices.
         </motion.p>
 
-        {/* Unique custom badge line */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="flex flex-wrap justify-center gap-2 pt-2 max-w-xl"
-        >
-          <span className="px-3 py-1 bg-zinc-900/90 border border-zinc-800 text-zinc-350 rounded-full text-[10px] font-mono tracking-wide font-medium">
-            ✦ Zeplite (tirzepatide)
-          </span>
-          <span className="px-3 py-1 bg-zinc-900/90 border border-zinc-800 text-zinc-350 rounded-full text-[10px] font-mono tracking-wide font-medium">
-            ✦ Semalite (semaglutide)
-          </span>
-          <span className="px-3 py-1 bg-zinc-900/90 border border-zinc-800 text-zinc-350 rounded-full text-[10px] font-mono tracking-wide font-medium">
-            ✦ Once-Weekly Pen
-          </span>
-        </motion.div>
+
 
         {/* High-Contrast Luxury Buttons */}
         <motion.div
