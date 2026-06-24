@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Explicit rules for AI bots to guarantee they can crawl, index, and cite Lumina Wellness
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+Sitemap: https://www.luminawellness.ng/sitemap.xml

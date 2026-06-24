@@ -91,9 +91,14 @@ export default function Footer() {
           Disclaimer: Zeplite and Semalite are prescription medications. Results vary. Use as directed.
         </p>
         
-        <p className="shrink-0 text-zinc-550 self-center md:self-end">
-          &copy; 2026 Lumina Wellness. All rights reserved.
-        </p>
+        <div className="flex flex-col sm:flex-row items-center gap-2 text-zinc-550 self-center md:self-end">
+          <span className="inline-flex items-center gap-1 text-[10px] sm:text-xs font-mono text-zinc-500">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+            Last Updated: June 24, 2026
+          </span>
+          <span className="hidden sm:inline text-zinc-300">·</span>
+          <span>&copy; 2026 Lumina Wellness. All rights reserved.</span>
+        </div>
       </div>
 
     </footer>

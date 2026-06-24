@@ -13,62 +13,116 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <!-- FAQ structured data schema for indexing -->
+    <!-- FAQ and Knowledge Graph structured data schema for SEO & AI Search Engine indexing -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is Zeplite?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Zeplite is tirzepatide — a once-weekly weight-loss treatment and the same active ingredient used in leading GLP-1 medications worldwide. It’s made by Lumina Wellness."
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is Zeplite?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Zeplite is a once-weekly weight-loss treatment and the same active ingredient used in leading GLP-1 medications worldwide. It works by two pathways, GLP-1 and GIP. It’s made by Lumina Wellness."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is Semalite?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Semalite is a GLP-1 receptor agonist that is popularly used as a weight-loss treatment, also a once-weekly option."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Zeplite safe?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Zeplite is made available through Lumina Wellness. As with any medication, we help confirm it’s right for you before you start."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does it cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pricing for all doses is listed on our store. Zeplite starts low and the dose steps up gradually over time."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I order?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can start by filling out our online clinical intake form to check your eligibility, order directly on our store, or message us on WhatsApp and our team will guide you through it."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know Lumina is real?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We’re a Nigerian company, CAC-registered, and we’re reachable on WhatsApp and social media. Ask us anything before you order."
+              }
             }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Lumina Wellness",
+          "url": "https://www.luminawellness.ng",
+          "logo": "https://res.cloudinary.com/dpsvazol5/image/upload/v1781967579/IMG_0930_s4oews.jpg",
+          "description": "Lumina Wellness is a Nigerian company making modern, effective weight-loss treatments accessible and affordable, specializing in GLP-1 medications.",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "url": "https://wa.me/2349072081918",
+            "email": "luminiawellnessng@gmail.com"
           },
-          {
-            "@type": "Question",
-            "name": "What is Semalite?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Semalite is our semaglutide-based weight-loss treatment, also a once-weekly option."
-            }
+          "sameAs": [
+            "https://instagram.com/luminawellness.ng",
+            "https://lumina-wellness.catlog.shop/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Zeplite (Double Strength)",
+          "description": "Our flagship weight-loss treatment. A once-weekly GIP and GLP-1 double receptor agonist treatment started low and stepped up gradually for the best weight-loss results in Nigeria.",
+          "image": "https://catlog-s3.s3.eu-west-2.amazonaws.com/ITEMS/pua7dib44x.jpeg",
+          "brand": {
+            "@type": "Brand",
+            "name": "Lumina Wellness"
           },
-          {
-            "@type": "Question",
-            "name": "Is Zeplite safe?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Zeplite is made available through Lumina Wellness. As with any medication, we help confirm it’s right for you before you start."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How much does it cost?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Pricing for all doses is listed on our store. Zeplite starts low and the dose steps up gradually over time."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I order?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Order directly on our store, or message us on WhatsApp and our team will guide you through it."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I know Lumina is real?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We’re a Nigerian company, CAC-registered, and we’re reachable on WhatsApp and social media. Ask us anything before you order."
-            }
+          "offers": {
+            "@type": "Offer",
+            "url": "https://lumina-wellness.catlog.shop/",
+            "priceCurrency": "NGN",
+            "availability": "https://schema.org/InStock"
           }
-        ]
-      }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Semalite (Single Strength)",
+          "description": "A trusted GLP-1 weight-loss treatment option in Nigeria. A once-weekly GLP-1 receptor agonist treatment designed for steady, lasting weight loss.",
+          "image": "https://catlog-s3.s3.eu-west-2.amazonaws.com/ITEMS/kz4ysx61pj.jpeg",
+          "brand": {
+            "@type": "Brand",
+            "name": "Lumina Wellness"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://lumina-wellness.catlog.shop/",
+            "priceCurrency": "NGN",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      ]
     </script>
   </head>
   <body>
