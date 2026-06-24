@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ShoppingBag, HeartHandshake } from "lucide-react";
+import { ShoppingBag, HeartHandshake, ClipboardCheck } from "lucide-react";
 import { BRAND_CONFIG } from "../config";
 
 export default function FinalCTA() {
@@ -25,19 +25,30 @@ export default function FinalCTA() {
         </h2>
 
         <p className="mt-4 text-sm sm:text-base text-zinc-400 max-w-xl mx-auto font-light leading-relaxed">
-          Take the first step today. Browse our treatments or message us. No pressure, just answers.
+          Take the first step today. Complete our online intake form, browse our treatments, or message us. No pressure, just answers.
         </p>
 
         {/* Buttons / CTAs */}
-        <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4 max-w-sm sm:max-w-md mx-auto">
+        <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 max-w-md sm:max-w-2xl mx-auto">
+          <a
+            id="final-cta-intake-btn"
+            href={BRAND_CONFIG.intakeFormUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 py-4 px-8 rounded-full text-xs font-black text-black bg-[#dfabeb] hover:bg-[#d598e3] active:scale-95 transition-all text-center font-display shadow-md cursor-pointer duration-205"
+          >
+            <ClipboardCheck className="w-4 h-4 text-zinc-950" />
+            <span>Complete Intake Form</span>
+          </a>
+
           <a
             id="final-cta-shop-btn"
             href={BRAND_CONFIG.catlogStoreUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2.5 py-4 px-8 rounded-full text-xs font-bold text-black bg-white hover:bg-[#dfabeb] active:scale-95 transition-all text-center font-display shadow-md cursor-pointer duration-205"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 py-4 px-8 rounded-full text-xs font-bold text-white bg-zinc-900 hover:bg-zinc-800 active:scale-95 transition-all text-center font-display shadow-md cursor-pointer duration-205"
           >
-            <ShoppingBag className="w-4 h-4 text-black" />
+            <ShoppingBag className="w-4 h-4 text-[#dfabeb]" />
             <span>Shop Now</span>
           </a>
 

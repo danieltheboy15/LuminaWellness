@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ShoppingBag, ArrowRight, ClipboardList, Stethoscope, Compass } from "lucide-react";
+import { ShoppingBag, ArrowRight, ClipboardList, ClipboardCheck, Stethoscope, Compass } from "lucide-react";
 import { BRAND_CONFIG } from "../config";
 
 export default function HowToGetStarted() {
@@ -7,7 +7,7 @@ export default function HowToGetStarted() {
     {
       number: "01",
       title: "Reach out",
-      desc: "order on our store or message us on WhatsApp.",
+      desc: "fill out our intake form, order on our store, or message us on WhatsApp.",
       icon: <ClipboardList className="w-5 h-5 text-zinc-900" />
     },
     {
@@ -76,7 +76,18 @@ export default function HowToGetStarted() {
         </div>
 
         {/* Responsive, custom action buttons */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-md sm:max-w-xl mx-auto">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-md sm:max-w-2xl mx-auto">
+          <a
+            id="get-started-intake-btn"
+            href={BRAND_CONFIG.intakeFormUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 py-4 px-8 rounded-full text-xs font-black text-black bg-[#dfabeb] hover:bg-[#d598e3] active:scale-95 transition-all text-center font-display shadow-md cursor-pointer duration-200"
+          >
+            <ClipboardCheck className="w-4 h-4 text-zinc-950" />
+            <span>Complete Intake Form</span>
+          </a>
+
           <a
             id="get-started-shop-btn"
             href={BRAND_CONFIG.catlogStoreUrl}

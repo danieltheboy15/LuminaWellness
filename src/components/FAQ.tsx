@@ -38,7 +38,7 @@ export default function FAQ() {
     {
       id: "q5",
       question: "How do I order?",
-      answer: "Order directly on our store, or message us on WhatsApp and our team will guide you through it."
+      answer: "You can start by filling out our online clinical intake form to check your eligibility, order directly on our store, or message us on WhatsApp and our team will guide you through it."
     },
     {
       id: "q6",

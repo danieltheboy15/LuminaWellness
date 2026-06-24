@@ -92,6 +92,26 @@ export default function Hero() {
             <span>Chat with us on WhatsApp</span>
           </a>
         </motion.div>
+
+        {/* Highlighted Intake Form Entry Link */}
+        <motion.div
+          id="hero-intake-link-pill"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="mt-6 flex justify-center"
+        >
+          <a
+            href={BRAND_CONFIG.intakeFormUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-900/50 hover:bg-zinc-900 border border-zinc-800 text-xs text-zinc-300 hover:text-white transition-all cursor-pointer group shadow-inner"
+          >
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0" />
+            <span>Ready to start? Save time and fill out our <strong>Clinical Intake Form</strong></span>
+            <ArrowRight className="w-3.5 h-3.5 text-brand transition-transform group-hover:translate-x-0.5 shrink-0" />
+          </a>
+        </motion.div>
       </div>
     </section>
   );

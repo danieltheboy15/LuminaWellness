@@ -11,10 +11,14 @@ import FAQ from "./components/FAQ";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
 import StickyControls from "./components/StickyControls";
+import IntakePopup from "./components/IntakePopup";
 
 export default function App() {
   return (
     <div className="mesh-gradient min-h-screen relative text-zinc-800 font-sans selection:bg-brand/30 selection:text-brand-deep">
+      {/* 10-second Delay Clinical Intake Form Popup */}
+      <IntakePopup />
+
       {/* Sticky actions (WhatsApp / Catlog Store Quick CTAs) */}
       <StickyControls />
 
