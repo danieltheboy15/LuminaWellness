@@ -2,11 +2,11 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import WhoWeAre from "./components/WhoWeAre";
 import Products from "./components/Products";
-import ZepliteDetail from "./components/ZepliteDetail";
-import SemaliteDetail from "./components/SemaliteDetail";
+import HowItWorks from "./components/HowItWorks";
 import WhyLumina from "./components/WhyLumina";
+import SupportBeyondThePen from "./components/SupportBeyondThePen";
 import HowToGetStarted from "./components/HowToGetStarted";
-import Reviews from "./components/Reviews";
+import PreFAQBanner from "./components/PreFAQBanner";
 import FAQ from "./components/FAQ";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
@@ -15,49 +15,49 @@ import IntakePopup from "./components/IntakePopup";
 
 export default function App() {
   return (
-    <div className="mesh-gradient min-h-screen relative text-zinc-800 font-sans selection:bg-brand/30 selection:text-brand-deep">
+    <div className="mesh-gradient min-h-screen relative text-zinc-900 font-sans selection:bg-[#dfabeb]/40 selection:text-zinc-950">
       {/* 10-second Delay Clinical Intake Form Popup */}
       <IntakePopup />
 
-      {/* Sticky actions (WhatsApp / Catlog Store Quick CTAs) */}
+      {/* Sticky Mobile/Desktop Actions (WhatsApp & Shop to WhatsApp) */}
       <StickyControls />
 
-      {/* Main Structural Flow */}
+      {/* Global Header */}
       <Header />
       
       <main id="lumina-main-content">
-        {/* Section 1 - Hero */}
+        {/* Section 1: Hero (brand-first) */}
         <Hero />
 
-        {/* Section 2 - Who We Are */}
+        {/* Section 2: Who We Are */}
         <WhoWeAre />
 
-        {/* Section 3 - Products Suite & Selector */}
+        {/* Section 3: Our Product */}
         <Products />
 
-        {/* Section 4 - Zeplite Deep Dive */}
-        <ZepliteDetail />
+        {/* Section 4: How It Works */}
+        <HowItWorks />
 
-        {/* Section 5 - Semalite Deep Dive */}
-        <SemaliteDetail />
-
-        {/* Section 6 - Brand Differentiators */}
+        {/* Section 5: Why Lumina */}
         <WhyLumina />
 
-        {/* Section 7 - How to Get Started */}
+        {/* Section 6: Support Beyond the Pen */}
+        <SupportBeyondThePen />
+
+        {/* Section 7: How to Get Started */}
         <HowToGetStarted />
 
-        {/* Section 8 - Success Reviews & Transformational Cases */}
-        <Reviews />
+        {/* Featured Visual Banner */}
+        <PreFAQBanner />
 
-        {/* Section 9 - FAQ & Structured Data */}
+        {/* Section 8: FAQ */}
         <FAQ />
 
-        {/* Section 9 - Final CTA */}
+        {/* Section 9: Final Call to Action */}
         <FinalCTA />
       </main>
 
-      {/* Section 10 - Footer & Disclaimer */}
+      {/* Section 10: Footer */}
       <Footer />
     </div>
   );

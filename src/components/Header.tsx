@@ -9,35 +9,43 @@ export default function Header() {
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-zinc-200/60 px-4 sm:px-6 lg:px-8 shadow-sm"
+      className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-zinc-200/70 px-4 sm:px-6 lg:px-8 shadow-xs"
     >
-      <div className="max-w-7xl mx-auto h-20 md:h-24 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto h-20 flex items-center justify-between">
         {/* Brand Logo & Name */}
         <a id="brand-logo-link" href="#" className="flex items-center gap-3 active:scale-95 transition-transform group">
           <div className="relative">
-            <div className="absolute inset-0 bg-brand/30 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-all duration-300" />
+            <div className="absolute inset-0 bg-[#dfabeb]/25 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-all duration-300" />
             <img
               id="brand-logo-img"
               src="https://res.cloudinary.com/dpsvazol5/image/upload/v1781967772/IMG_0930_s4oews-removebg-preview_zeu4rg.png"
               alt="Lumina Wellness Logo"
-              className="h-16 md:h-18 w-auto object-contain cursor-pointer filter contrast-125 saturate-110 relative z-10 transition-transform duration-300 group-hover:scale-105"
+              className="h-12 sm:h-14 w-auto object-contain cursor-pointer filter contrast-125 saturate-110 relative z-10 transition-transform duration-300 group-hover:scale-105"
               referrerPolicy="no-referrer"
             />
           </div>
-          
         </a>
+
+        {/* Navigation / Quick Actions */}
+        <div className="hidden md:flex items-center gap-6 text-xs font-semibold text-zinc-600">
+          <a href="#who-we-are" className="hover:text-zinc-950 transition-colors">Who We Are</a>
+          <a href="#our-products-section" className="hover:text-zinc-950 transition-colors">Lumina Tirz-Pen</a>
+          <a href="#how-it-works-section" className="hover:text-zinc-950 transition-colors">How It Works</a>
+          <a href="#why-people-choose-lumina" className="hover:text-zinc-950 transition-colors">Why Lumina</a>
+          <a href="#faq-section" className="hover:text-zinc-950 transition-colors">FAQ</a>
+        </div>
 
         {/* Global CTAs */}
         <div className="flex items-center gap-2 sm:gap-3">
           <a
             id="header-whatsapp-btn"
-            href={BRAND_CONFIG.whatsappUrl}
+            href={BRAND_CONFIG.whatsappConsultUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 p-3 sm:py-2 sm:px-4 rounded-full text-xs font-semibold bg-[#25D366] text-white hover:bg-[#128c7e] border border-[#25D366] hover:border-[#128c7e] transition-all cursor-pointer duration-300 shadow-sm"
+            className="flex items-center justify-center gap-2 py-2 px-3 sm:px-4 rounded-full text-xs font-semibold bg-[#25D366] text-white hover:bg-[#1fb355] transition-all cursor-pointer shadow-xs active:scale-95"
           >
             <svg
-              className="w-4 h-4 sm:w-3.5 sm:h-3.5 shrink-0 fill-current"
+              className="w-4 h-4 shrink-0 fill-current text-white"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -48,13 +56,13 @@ export default function Header() {
 
           <a
             id="header-shop-btn"
-            href={BRAND_CONFIG.catlogStoreUrl}
+            href={BRAND_CONFIG.whatsappShopUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 p-3 sm:py-2 sm:px-5 rounded-full text-xs font-bold text-white bg-zinc-950 hover:bg-zinc-800 border border-transparent transition-all cursor-pointer shadow-md font-display"
+            className="flex items-center justify-center gap-2 py-2 px-4 sm:px-5 rounded-full text-xs font-bold text-black bg-[#dfabeb] hover:bg-[#d598e3] transition-all cursor-pointer shadow-xs font-display"
           >
-            <ShoppingBag className="w-4 h-4 sm:w-3.5 sm:h-3.5 shrink-0" />
-            <span className="hidden sm:inline font-sans">Shop Now</span>
+            <ShoppingBag className="w-3.5 h-3.5 shrink-0" />
+            <span className="font-sans">Shop Now</span>
           </a>
         </div>
       </div>

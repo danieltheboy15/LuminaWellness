@@ -1,101 +1,112 @@
 import { motion } from "motion/react";
-import { ShieldCheck, Truck, Sparkles, Building2, HelpCircle, CheckCircle2 } from "lucide-react";
+import { ShieldCheck, Truck, Sparkles, Building2, HelpCircle, CheckCircle2, HeartHandshake } from "lucide-react";
 import { BRAND_CONFIG } from "../config";
 
 export default function WhoWeAre() {
-  const trustMetrics = [
+  const trustPoints = [
     {
-      icon: <Building2 className="w-5 h-5 text-[#dfabeb]" />,
-      title: "CAC Registered Entity",
-      desc: "Fully registered and operating under complete Nigerian corporate regulations."
+      title: "Registered Nigerian Entity",
+      desc: "Operating with transparency, based right here in Nigeria.",
+      icon: <Building2 className="w-5 h-5 text-[#dfabeb]" />
     },
     {
-      icon: <ShieldCheck className="w-5 h-5 text-[#dfabeb]" />,
-      title: "Genuine Regulated Lots",
-      desc: "Exactly the same active ingredients utilized by leading therapy brands global-wide."
+      title: "Genuine Active Peptides",
+      desc: "Same regulated tirzepatide active ingredients used in premier global GLP-1/GIP treatments.",
+      icon: <ShieldCheck className="w-5 h-5 text-[#dfabeb]" />
     },
     {
-      icon: <Truck className="w-5 h-5 text-[#dfabeb]" />,
-      title: "Cold-Chain Logistics",
-      desc: "Strictly temperature-controlled delivery to safeguard peptide potency all the way to you."
+      title: "Cold-Chain Protected",
+      desc: "Temperature-controlled distribution to ensure peak peptide potency and safety upon arrival.",
+      icon: <Truck className="w-5 h-5 text-[#dfabeb]" />
     }
   ];
 
   return (
     <section
       id="who-we-are"
-      className="relative px-4 sm:px-6 lg:px-8 pt-16 sm:pt-24 pb-24 sm:pb-32 bg-black overflow-hidden text-white"
+      className="relative px-4 sm:px-6 lg:px-8 pt-16 sm:pt-24 pb-24 sm:pb-32 bg-black overflow-hidden text-white border-t border-zinc-900"
     >
-      {/* Decorative premium dark glows */}
+      {/* Decorative dark lighting */}
       <div className="absolute top-1/4 left-1/3 w-80 h-80 bg-[#dfabeb]/5 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-purple-900/10 rounded-full blur-[150px] pointer-events-none animate-pulse-slow" />
+      <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-purple-900/10 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          {/* Left Column: Stunning luxury framed image with custom badge */}
+          {/* Left Column: Image / Visual Card */}
           <div className="lg:col-span-5 order-2 lg:order-1 relative group">
-            {/* Elegant framing shadows and borders */}
-            <div className="absolute -inset-1 bg-gradient-to-tr from-[#dfabeb] to-purple-600 rounded-3xl blur-md opacity-20 group-hover:opacity-40 transition duration-700" />
+            <div className="absolute -inset-1 bg-gradient-to-tr from-[#dfabeb] to-purple-600 rounded-3xl blur-md opacity-25 group-hover:opacity-40 transition duration-700" />
             
             <div className="relative bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="https://res.cloudinary.com/dpsvazol5/image/upload/v1781981111/IMG_0933_yet5kk.jpg"
-                alt="Lumina Wellness Medical-Grade Support Team"
-                className="w-full h-[400px] object-cover filter brightness-[1.01] contrast-105 saturate-95 grayscale-[10%] group-hover:scale-102 transition-transform duration-700"
+                src="https://res.cloudinary.com/dpsvazol5/image/upload/v1789061715/IMG-20260910-WA0027_r5xssl.jpg"
+                alt="Lumina Wellness Support Team"
+                className="w-full h-[420px] object-cover filter brightness-[1.02] contrast-105 saturate-95 group-hover:scale-102 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
 
-              {/* Minimalist overlay indicator */}
-              
-
-              {/* Floating widget stamp */}
-              
+              <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-zinc-950/85 backdrop-blur-md border border-zinc-800/80 flex items-center justify-between">
+                <div>
+                  <div className="text-[10px] font-mono text-[#dfabeb] uppercase tracking-wider">Clinical Guidance</div>
+                  <div className="text-xs font-semibold text-white">Free Weight Loss Consultation</div>
+                </div>
+                <div className="w-8 h-8 rounded-full bg-[#dfabeb]/20 flex items-center justify-center text-[#dfabeb]">
+                  <HeartHandshake className="w-4 h-4" />
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Right Column: Narrative elements and metallic trust cards */}
-          <div className="lg:col-span-7 order-1 lg:order-2 space-y-8 text-left">
-            <div className="space-y-4">
-              <div className="inline-flex items-center gap-1.5 text-xs font-mono text-[#dfabeb] uppercase tracking-widest bg-zinc-90 w-fit px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/60 shadow-inner">
+          {/* Right Column: Section 2 Copy */}
+          <div className="lg:col-span-7 order-1 lg:order-2 space-y-6 text-left">
+            <div className="space-y-3">
+              <div className="inline-flex items-center gap-1.5 text-xs font-mono text-[#dfabeb] uppercase tracking-widest px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/60 shadow-inner">
                 <Sparkles className="w-3.5 h-3.5 text-[#dfabeb]" />
                 <span>Who We Are</span>
               </div>
 
               <h2 id="who-we-are-title" className="text-3xl sm:text-5xl font-display font-black text-white tracking-tight leading-none">
                 Welcome to <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#dfabeb] to-purple-400 font-display">
-                  Lumina Wellness
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#dfabeb] to-purple-300 font-display">
+                  Lumina
                 </span>
               </h2>
             </div>
 
-            <div className="space-y-6 text-zinc-305 text-sm sm:text-base font-light leading-relaxed font-sans text-zinc-300">
+            <div className="space-y-4 text-zinc-300 text-sm sm:text-base font-light leading-relaxed font-sans">
               <p>
-                Lumina Wellness is a Nigerian company making modern, effective weight-loss medication accessible to people here, at very affordable prices.
+                Lumina exists to bring modern wellness home. We're a Nigerian company making effective, globally proven weight loss treatments easily accessible and affordable, right here at home, without the import wait or the import markup.
               </p>
               <p>
-                We offer two GLP-1 treatments: Zeplite (double receptor agonist), our flagship, and Semalite (GLP-1 receptor agonist). Both are the same active ingredients used in leading weight-loss treatments worldwide, made available locally, so you get genuine, regulated products without paying imported, marked-up prices.
+                Our main product is the <strong>Lumina Tirz-Pen</strong>, a tirzepatide-based, dual-action GLP-1 + GIP weight loss injection, pre-filled for ease of use. It uses the same active ingredient as leading weight loss peptides worldwide, made available locally, so you get a genuine, regulated product without paying imported, marked-up prices.
               </p>
               <p>
-                If you’ve seen Zeplite or Semalite on social media and wondered whether we’re the real thing — yes, we are. We’re happy to answer any question before you order anything.
+                If you've seen the Lumina Tirz-Pen on social media and wondered whether we're the real thing, yes, we are. We're happy to answer any question, with a free consultation, before you order anything.
               </p>
             </div>
 
-            {/* Premium trust metrics list */}
-            
+            {/* Quick trust metrics */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+              {trustPoints.map((tp, idx) => (
+                <div key={idx} className="p-3.5 rounded-2xl bg-zinc-900/60 border border-zinc-800 space-y-1">
+                  <div className="mb-1">{tp.icon}</div>
+                  <div className="text-xs font-semibold text-white">{tp.title}</div>
+                  <div className="text-[11px] text-zinc-400 font-light leading-tight">{tp.desc}</div>
+                </div>
+              ))}
+            </div>
 
             <div className="pt-2">
               <a
                 id="who-we-are-ask-btn"
-                href={BRAND_CONFIG.whatsappUrl}
+                href={BRAND_CONFIG.whatsappConsultUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-xs font-mono font-semibold text-[#dfabeb] hover:text-[#f4d4fb] transition-colors cursor-pointer group"
               >
                 <HelpCircle className="w-4 h-4 text-[#dfabeb] group-hover:rotate-12 transition-transform" />
                 <span className="underline decoration-[#dfabeb]/50 underline-offset-4 group-hover:decoration-[#dfabeb] transition-colors">
-                  Consult an intake specialist right now
+                  Ask us anything with a free consultation on WhatsApp
                 </span>
               </a>
             </div>

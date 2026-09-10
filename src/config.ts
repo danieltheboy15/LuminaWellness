@@ -1,19 +1,25 @@
 /**
  * Configurations and external links for Lumina Wellness.
- * Easy for the client to customize in one place.
+ * All Shop Now and Consultation CTAs point directly to WhatsApp (09072081918).
  */
 export const BRAND_CONFIG = {
   name: "Lumina Wellness",
+  productName: "Lumina Tirz-Pen",
   domain: "www.luminawellness.ng",
+  phone: "09072081918",
+  whatsappNumberFormatted: "2349072081918",
   
-  // Real store and support links - easily adjusted by user
-  catlogStoreUrl: "https://lumina-wellness.catlog.shop/",
-  whatsappUrl: "https://wa.me/2349072081918?text=Hi%20Lumina%20Wellness%20%F0%9F%91%8B!%20I%20came%20across%20your%20page%20and%20I%27d%20love%20to%20know%20more.%20Can%20you%20help%20me%20get%20started%3F",
+  // WhatsApp URLs with pre-filled context messages for shop and free consultation
+  whatsappShopUrl: "https://wa.me/2349072081918?text=Hi%20Lumina%20Wellness%20%F0%9F%91%8B!%20I%27d%20like%20to%20order%20the%20Lumina%20Tirz-Pen%20(Tirzepatide).",
+  whatsappConsultUrl: "https://wa.me/2349072081918?text=Hi%20Lumina%20Wellness%20%F0%9F%91%8B!%20I%27d%20like%20to%20request%20a%20free%20weight%20loss%20consultation.",
+  whatsappUrl: "https://wa.me/2349072081918?text=Hi%20Lumina%20Wellness%20%F0%9F%91%8B!%20I%20have%20a%20question%20about%20the%20Lumina%20Tirz-Pen.",
+  
+  // Social and contact links
   instagramUrl: "https://instagram.com/luminawellness.ng",
+  tiktokUrl: "https://www.tiktok.com/@luminawellness.ng",
   email: "luminiawellnessng@gmail.com",
   intakeFormUrl: "https://luminaintakeform.netlify.app/",
   
-  // Specific routes
-  zepliteStoreUrl: "https://lumina-wellness.catlog.shop/",
-  semaliteStoreUrl: "https://lumina-wellness.catlog.shop/",
+  // Store fallback (direct to WhatsApp as requested)
+  catlogStoreUrl: "https://wa.me/2349072081918?text=Hi%20Lumina%20Wellness%20%F0%9F%91%8B!%20I%27d%20like%20to%20view%20prices%20and%20order%20the%20Lumina%20Tirz-Pen.",
 };
