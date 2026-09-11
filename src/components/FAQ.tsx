@@ -140,16 +140,16 @@ export default function FAQ() {
   return (
     <section
       id="faq-section"
-      className="px-4 sm:px-6 lg:px-8 py-20 sm:py-28 bg-zinc-50 border-t border-zinc-200 relative overflow-hidden text-zinc-900 text-left"
+      className="px-4 sm:px-6 lg:px-8 py-20 sm:py-28 bg-white border-t border-zinc-200 relative overflow-hidden text-zinc-900 text-left"
     >
-      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-[#dfabeb]/15 rounded-full blur-[140px] -z-10 pointer-events-none" />
+      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-[#330e53]/10 rounded-full blur-[140px] -z-10 pointer-events-none" />
 
       <div className="max-w-4xl mx-auto relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-white border border-zinc-200 rounded-full text-xs font-mono text-zinc-600 uppercase tracking-widest mb-4 shadow-sm">
-            <HelpCircle className="w-3.5 h-3.5 text-[#9f5fb0]" />
+            <HelpCircle className="w-3.5 h-3.5 text-[#330e53]" />
             <span>Questions & Answers</span>
           </div>
           <h2 id="faq-title" className="text-3xl sm:text-5xl font-display font-black text-zinc-950 tracking-tight leading-tight">
@@ -169,7 +169,7 @@ export default function FAQ() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search questions (e.g., ulcer, PCOS, cost, storage)..."
-              className="w-full pl-11 pr-4 py-3 bg-white border border-zinc-200 rounded-2xl text-xs sm:text-sm placeholder:text-zinc-400 focus:outline-none focus:border-[#dfabeb] focus:ring-2 focus:ring-[#dfabeb]/20 transition-all shadow-xs"
+              className="w-full pl-11 pr-4 py-3 bg-white border border-zinc-200 rounded-2xl text-xs sm:text-sm placeholder:text-zinc-400 focus:outline-none focus:border-[#330e53] focus:ring-2 focus:ring-[#330e53]/20 transition-all shadow-xs"
             />
           </div>
 
@@ -203,7 +203,7 @@ export default function FAQ() {
               <p className="text-sm text-zinc-500">No questions match your search.</p>
               <button
                 onClick={() => { setSearchQuery(""); setSelectedCategory("all"); }}
-                className="mt-3 text-xs font-semibold text-[#9f5fb0] underline"
+                className="mt-3 text-xs font-semibold text-[#330e53] underline"
               >
                 Reset filters
               </button>
@@ -216,7 +216,7 @@ export default function FAQ() {
                   key={faq.id}
                   className={`rounded-2xl border transition-all duration-200 text-left overflow-hidden ${
                     isOpen
-                      ? "bg-white border-[#dfabeb] shadow-[0_8px_24px_rgba(223,171,235,0.12)]"
+                      ? "bg-white border-[#330e53]/50 shadow-[0_8px_24px_rgba(51,14,83,0.06)]"
                       : "bg-white border-zinc-200/80 hover:border-zinc-300"
                   }`}
                 >
@@ -225,10 +225,10 @@ export default function FAQ() {
                     className="w-full flex justify-between items-center p-5 sm:p-6 text-left focus:outline-none group cursor-pointer"
                     aria-expanded={isOpen}
                   >
-                    <span className="font-display font-bold text-sm sm:text-base text-zinc-900 group-hover:text-[#9f5fb0] transition-colors pr-4 tracking-tight">
+                    <span className="font-display font-bold text-sm sm:text-base text-zinc-900 group-hover:text-[#330e53] transition-colors pr-4 tracking-tight">
                       {faq.question}
                     </span>
-                    <div className="shrink-0 w-8 h-8 rounded-full bg-zinc-50 group-hover:bg-[#dfabeb]/20 text-zinc-400 group-hover:text-zinc-950 flex items-center justify-center transition-all border border-zinc-200">
+                    <div className="shrink-0 w-8 h-8 rounded-full bg-zinc-50 group-hover:bg-[#330e53]/10 text-zinc-400 group-hover:text-zinc-950 flex items-center justify-center transition-all border border-zinc-200">
                       {isOpen ? (
                         <ChevronUp className="w-4 h-4" />
                       ) : (
@@ -256,7 +256,7 @@ export default function FAQ() {
                                 href={BRAND_CONFIG.whatsappShopUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 py-3 px-5 rounded-full text-xs font-bold text-black bg-[#dfabeb] hover:bg-[#d598e3] transition-all font-display active:scale-95 shadow-xs cursor-pointer"
+                                className="inline-flex items-center gap-2 py-3 px-5 rounded-full text-xs font-bold text-white bg-[#330e53] hover:bg-[#43146d] transition-all font-display active:scale-95 shadow-xs cursor-pointer"
                               >
                                 <ShoppingBag className="w-3.5 h-3.5" />
                                 <span>View prices in our store</span>

@@ -17,7 +17,7 @@ export default function SemaliteDetail() {
   return (
     <section
       id="semalite-deep-dive"
-      className="px-4 sm:px-6 lg:px-8 py-24 bg-[#fcfbfc] border-t border-zinc-200 relative overflow-hidden text-left"
+      className="px-4 sm:px-6 lg:px-8 py-24 bg-white border-t border-zinc-200 relative overflow-hidden text-left"
     >
       <div className="absolute bottom-0 right-10 w-96 h-96 bg-brand/5 rounded-full blur-[140px] -z-10 animate-pulse-slow" />
 
@@ -32,7 +32,7 @@ export default function SemaliteDetail() {
             </div>
 
             <h2 id="semalite-detail-title" className="text-3xl sm:text-5xl font-display font-black text-zinc-900 tracking-tight leading-none">
-              How <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 to-purple-800 font-display">Semalite</span> Works
+              How <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 to-[#330e53] font-display">Semalite</span> Works
             </h2>
 
             <div className="space-y-4 text-zinc-600 text-sm sm:text-base font-light leading-relaxed font-sans">
@@ -53,7 +53,7 @@ export default function SemaliteDetail() {
                 className="inline-flex items-center gap-2 py-4 px-8 rounded-full text-xs font-bold text-white bg-zinc-950 hover:bg-zinc-800 active:scale-95 transition-all text-center cursor-pointer shadow-md duration-200 font-display"
               >
                 <span>Shop Semalite Treatment</span>
-                <ArrowUpRight className="w-4 h-4 text-[#dfabeb]" />
+                <ArrowUpRight className="w-4 h-4 text-white" />
               </a>
             </div>
           </div>

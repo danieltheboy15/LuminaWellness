@@ -91,31 +91,24 @@ export default function Reviews() {
   return (
     <section
       id="reviews-section"
-      className="px-4 sm:px-6 lg:px-8 py-24 sm:py-32 bg-zinc-950 border-t border-zinc-900 overflow-hidden text-white relative text-left"
+      className="px-4 sm:px-6 lg:px-8 py-24 sm:py-32 bg-white border-t border-zinc-200 overflow-hidden text-zinc-950 relative text-left"
     >
       {/* Background premium glows */}
-      <div className="absolute top-1/4 right-1/4 w-80 h-80 bg-purple-500/5 rounded-full blur-[140px] pointer-events-none select-none" />
-      <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-[#dfabeb]/5 rounded-full blur-[140px] pointer-events-none select-none" />
+      <div className="absolute top-1/4 right-1/4 w-80 h-80 bg-[#330e53]/5 rounded-full blur-[140px] pointer-events-none select-none" />
+      <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-[#330e53]/5 rounded-full blur-[140px] pointer-events-none select-none" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-full text-xs font-mono text-zinc-400 uppercase tracking-widest mb-4 shadow-inner">
-            <Sparkles className="w-3.5 h-3.5 text-[#dfabeb]" />
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-zinc-50 border border-zinc-200 rounded-full text-xs font-mono text-zinc-600 uppercase tracking-widest mb-4 shadow-xs">
+            <Sparkles className="w-3.5 h-3.5 text-[#330e53]" />
             <span>Success Stories</span>
           </span>
-          <h2 id="reviews-title" className="text-3xl sm:text-5xl font-display font-black text-white tracking-tight leading-none">
-            Real Results from <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#dfabeb] to-purple-400 font-display">Our Customers</span>
+          <h2 id="reviews-title" className="text-3xl sm:text-5xl font-display font-black text-zinc-950 tracking-tight leading-none">
+            Real Results from <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#330e53] to-[#521884] font-display">Our Customers</span>
           </h2>
-          {/*<p className="mt-4 text-xs sm:text-sm text-zinc-400 font-light leading-relaxed max-w-2xl mx-auto">
-            See how Lumina client-members have transformed their physical health, eliminated food noise, and discovered sustained lifestyle success on Zeplite and Semalite.
-          </p>*/}
         </div>
-
-        
-
-        
 
         {/* Reviews Animated Grid */}
         <motion.div 
@@ -132,10 +125,10 @@ export default function Reviews() {
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.35, ease: "easeOut" }}
                 whileHover={{ y: -5 }}
-                className="bg-zinc-900/50 border border-zinc-800 rounded-3xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden group hover:border-zinc-700 hover:bg-zinc-900 transition-all duration-300"
+                className="bg-zinc-50/70 border border-zinc-200 rounded-3xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden group hover:border-zinc-300 hover:bg-white hover:shadow-md transition-all duration-300"
               >
                 {/* Micro accent block */}
-                <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-[#dfabeb] to-purple-500 opacity-0 group-hover:opacity-100 transition-all duration-300" />
+                <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-[#330e53] to-[#521884] opacity-0 group-hover:opacity-100 transition-all duration-300" />
                 
                 {/* Quote details */}
                 <div className="relative z-10">
@@ -147,30 +140,30 @@ export default function Reviews() {
                       ))}
                     </div>
 
-                    <div className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-mono font-medium">
-                      <Check className="w-3 h-3" />
+                    <div className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#330e53]/10 border border-[#330e53]/20 text-[#330e53] text-[10px] font-mono font-medium">
+                      <Check className="w-3 h-3 text-[#330e53]" />
                       <span>Verified Customer</span>
                     </div>
                   </div>
 
                   <div className="relative">
-                    <Quote className="w-8 h-8 text-zinc-800 absolute -top-4 -left-2 -z-0 opacity-50 transform -rotate-12 scale-110 pointer-events-none" />
-                    <p className="text-zinc-300 text-xs sm:text-sm font-light leading-relaxed mb-6 italic relative z-10">
+                    <Quote className="w-8 h-8 text-zinc-200 absolute -top-4 -left-2 -z-0 opacity-50 transform -rotate-12 scale-110 pointer-events-none" />
+                    <p className="text-zinc-700 text-xs sm:text-sm font-light leading-relaxed mb-6 italic relative z-10">
                       "{review.quote}"
                     </p>
                   </div>
                 </div>
 
                 {/* Patient Information */}
-                <div className="border-t border-zinc-800/80 pt-4 mt-auto relative z-10 flex items-center justify-between gap-3">
+                <div className="border-t border-zinc-200 pt-4 mt-auto relative z-10 flex items-center justify-between gap-3">
                   <div>
-                    <h4 className="font-display font-bold text-sm text-white">{review.name}</h4>
+                    <h4 className="font-display font-bold text-sm text-zinc-950">{review.name}</h4>
                     <p className="text-[11px] text-zinc-500 font-light">{review.location}</p>
                   </div>
                 </div>
 
                 {/* Mini watermark treatment */}
-                <span className="absolute bottom-20 right-4 font-mono text-[9px] text-[#dfabeb]/10 uppercase tracking-widest block font-black select-none pointer-events-none">
+                <span className="absolute bottom-20 right-4 font-mono text-[9px] text-[#330e53]/15 uppercase tracking-widest block font-black select-none pointer-events-none">
                   {review.treatment.split(" ")[0]}
                 </span>
               </motion.div>

@@ -29,7 +29,7 @@ export default function HowToGetStarted() {
       id="how-to-get-started"
       className="px-4 sm:px-6 lg:px-8 py-20 sm:py-28 bg-white border-t border-zinc-200 relative overflow-hidden text-left"
     >
-      <div className="absolute top-1/2 right-0 w-80 h-80 bg-[#dfabeb]/10 rounded-full blur-[100px] -z-10 pointer-events-none" />
+      <div className="absolute top-1/2 right-0 w-80 h-80 bg-[#330e53]/5 rounded-full blur-[100px] -z-10 pointer-events-none" />
 
       <div className="max-w-5xl mx-auto relative z-10">
         
@@ -54,13 +54,13 @@ export default function HowToGetStarted() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.15, duration: 0.5 }}
-              className="relative group text-left p-6 sm:p-8 rounded-3xl bg-white border border-zinc-200/90 hover:border-[#dfabeb] hover:shadow-xl transition-all duration-300 shadow-sm"
+              className="relative group text-left p-6 sm:p-8 rounded-3xl bg-white border border-zinc-200/90 hover:border-[#330e53]/40 hover:shadow-xl transition-all duration-300 shadow-sm"
             >
               <div className="flex items-center justify-between mb-6 relative z-10">
-                <div className="w-12 h-12 rounded-2xl bg-zinc-50 border border-zinc-200 flex items-center justify-center shrink-0 group-hover:bg-[#dfabeb]/20 group-hover:border-[#dfabeb] transition-colors">
+                <div className="w-12 h-12 rounded-2xl bg-zinc-50 border border-zinc-200 flex items-center justify-center shrink-0 group-hover:bg-[#330e53]/10 group-hover:border-[#330e53]/40 transition-colors">
                   {step.icon}
                 </div>
-                <span className="text-4xl font-display font-black text-zinc-200 group-hover:text-[#dfabeb] transition-colors select-none">
+                <span className="text-4xl font-display font-black text-zinc-200 group-hover:text-[#330e53] transition-colors select-none">
                   {step.number}
                 </span>
               </div>
@@ -81,7 +81,7 @@ export default function HowToGetStarted() {
             href={BRAND_CONFIG.whatsappShopUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 py-4 px-8 rounded-full text-xs font-black text-black bg-[#dfabeb] hover:bg-[#d598e3] active:scale-95 transition-all text-center font-display shadow-md cursor-pointer duration-200"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 py-4 px-8 rounded-full text-xs font-black text-white bg-[#330e53] hover:bg-[#43146d] active:scale-95 transition-all text-center font-display shadow-md cursor-pointer duration-200"
           >
             <ShoppingBag className="w-4 h-4" />
             <span>Shop Now</span>

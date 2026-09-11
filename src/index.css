@@ -5,10 +5,10 @@
   --font-display: "Inter", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
   
-  --color-brand: #dfabeb;
-  --color-brand-dark: #c58ad0;
-  --color-brand-light: #f5dffa;
-  --color-brand-deep: #1c0e20;
+  --color-brand: #330e53;
+  --color-brand-dark: #23083b;
+  --color-brand-light: #521884;
+  --color-brand-deep: #160426;
 }
 
 @layer base {
@@ -42,8 +42,8 @@
 
 /* Smooth gradient overlays for a premium white wellness feel */
 .mesh-gradient {
-  background: radial-gradient(circle at 10% 20%, rgba(223, 171, 235, 0.12) 0%, transparent 40%),
-              radial-gradient(circle at 90% 80%, rgba(197, 138, 208, 0.08) 0%, transparent 50%),
+  background: radial-gradient(circle at 10% 20%, rgba(51, 14, 83, 0.04) 0%, transparent 40%),
+              radial-gradient(circle at 90% 80%, rgba(51, 14, 83, 0.03) 0%, transparent 50%),
               #ffffff;
 }
 

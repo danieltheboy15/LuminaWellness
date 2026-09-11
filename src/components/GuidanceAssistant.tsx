@@ -113,11 +113,11 @@ export default function GuidanceAssistant() {
   const customWhatsAppUrl = `https://wa.me/2349072081918?text=Hi%20Lumina%20Wellness%20%F0%9F%91%8B!%20I%20came%20across%20your%20page%20and%20I%27d%20love%20to%20know%20more.%20Can%20you%20help%20me%20get%20started%3F`;
 
   return (
-    <div className="w-full max-w-2xl mx-auto bg-zinc-950 border border-zinc-800 rounded-3xl p-6 sm:p-10 relative overflow-hidden shadow-2xl text-white">
+    <div className="w-full max-w-2xl mx-auto bg-white border border-zinc-200 rounded-3xl p-6 sm:p-10 relative overflow-hidden shadow-lg text-zinc-950">
       
       {/* Visual background glows */}
-      <div className="absolute top-0 right-0 w-32 h-32 bg-[#dfabeb]/10 rounded-full blur-3xl -z-10" />
-      <div className="absolute bottom-0 left-0 w-32 h-32 bg-purple-900/10 rounded-full blur-3xl -z-10" />
+      <div className="absolute top-0 right-0 w-32 h-32 bg-[#330e53]/10 rounded-full blur-3xl -z-10" />
+      <div className="absolute bottom-0 left-0 w-32 h-32 bg-[#330e53]/5 rounded-full blur-3xl -z-10" />
 
       <AnimatePresence mode="wait">
         {/* Step 0: Welcome / Call to Action */}
@@ -129,18 +129,18 @@ export default function GuidanceAssistant() {
             exit={{ opacity: 0, y: -15 }}
             className="text-center py-6"
           >
-            <div className="inline-flex p-3 bg-zinc-90 w-fit shrink-0 bg-zinc-900 border border-zinc-800 text-[#dfabeb] rounded-full mb-4 shadow-inner">
+            <div className="inline-flex p-3 w-fit shrink-0 bg-zinc-50 border border-zinc-200 text-[#330e53] rounded-full mb-4 shadow-xs">
               <HelpCircle className="w-6 h-6 animate-pulse" />
             </div>
-            <h3 className="text-xl sm:text-2xl font-display font-medium text-white mb-3">
+            <h3 className="text-xl sm:text-2xl font-display font-bold text-zinc-950 mb-3">
               Not sure which is right for you?
             </h3>
-            <p className="text-zinc-400 text-sm max-w-md mx-auto mb-6 leading-relaxed">
+            <p className="text-zinc-600 text-sm max-w-md mx-auto mb-6 leading-relaxed">
               Take our interactive 30-second assessment. We will analyze your preferences and match you to your ideal GLP-1 weight-loss treatment.
             </p>
             <button
               onClick={handleStart}
-              className="inline-flex items-center gap-2 py-3 px-6 rounded-full text-sm font-bold text-black bg-white hover:bg-[#ebc4f3] active:scale-95 transition-all text-center font-display shadow-md cursor-pointer duration-200"
+              className="inline-flex items-center gap-2 py-3 px-6 rounded-full text-sm font-bold text-white bg-[#330e53] hover:bg-[#43146d] active:scale-95 transition-all text-center font-display shadow-md cursor-pointer duration-200"
             >
               <span>Find My Match</span>
               <ArrowRight className="w-4 h-4" />
@@ -160,7 +160,7 @@ export default function GuidanceAssistant() {
           >
             {/* Progress indicator */}
             <div className="flex items-center justify-between mb-6">
-              <span className="text-xs font-mono text-[#dfabeb] tracking-widest uppercase font-bold">
+              <span className="text-xs font-mono text-[#330e53] tracking-widest uppercase font-bold">
                 Step 0{currentStep} / 0{QUESTIONS.length}
               </span>
               <div className="flex gap-1.5">
@@ -168,14 +168,14 @@ export default function GuidanceAssistant() {
                   <div
                     key={i}
                     className={`h-1 w-8 rounded-full transition-all duration-305 ${
-                      i + 1 <= currentStep ? "bg-[#dfabeb]" : "bg-zinc-800"
+                      i + 1 <= currentStep ? "bg-[#330e53]" : "bg-zinc-200"
                     }`}
                   />
                 ))}
               </div>
             </div>
 
-            <h3 className="text-lg sm:text-xl font-display font-semibold text-white mb-6">
+            <h3 className="text-lg sm:text-xl font-display font-bold text-zinc-950 mb-6">
               {QUESTIONS[currentStep - 1].text}
             </h3>
 
@@ -184,17 +184,17 @@ export default function GuidanceAssistant() {
                 <button
                   key={idx}
                   onClick={() => handleOptionSelect(option.pointsTo)}
-                  className="w-full text-left p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800 hover:border-[#dfabeb]/50 hover:bg-zinc-900 active:scale-[0.99] transition-all group cursor-pointer"
+                  className="w-full text-left p-5 rounded-2xl bg-zinc-50 border border-zinc-200 hover:border-[#330e53]/40 hover:bg-white active:scale-[0.99] transition-all group cursor-pointer shadow-xs"
                 >
                   <div className="flex justify-between items-center mb-1">
-                    <span className="font-semibold text-sm text-zinc-100 group-hover:text-white transition-colors">
+                    <span className="font-semibold text-sm text-zinc-900 group-hover:text-zinc-950 transition-colors">
                       {option.label}
                     </span>
-                    <span className="w-5 h-5 rounded-full border border-zinc-700 group-hover:border-[#dfabeb] flex items-center justify-center text-[#dfabeb] opacity-0 group-hover:opacity-100 transition-all">
+                    <span className="w-5 h-5 rounded-full border border-zinc-300 group-hover:border-[#330e53] flex items-center justify-center text-[#330e53] opacity-0 group-hover:opacity-100 transition-all">
                       <Check className="w-3 h-3" style={{ strokeWidth: 3 }} />
                     </span>
                   </div>
-                  <p className="text-xs text-zinc-400 group-hover:text-zinc-300 font-light leading-normal">
+                  <p className="text-xs text-zinc-600 font-light leading-normal">
                     {option.description}
                   </p>
                 </button>
@@ -204,7 +204,7 @@ export default function GuidanceAssistant() {
             <div className="mt-6 flex justify-between items-center">
               <button
                 onClick={handleReset}
-                className="text-xs font-mono text-zinc-500 hover:text-zinc-300 transition-colors flex items-center gap-1 cursor-pointer"
+                className="text-xs font-mono text-zinc-500 hover:text-zinc-800 transition-colors flex items-center gap-1 cursor-pointer"
               >
                 Cancel assessment
               </button>
@@ -221,45 +221,45 @@ export default function GuidanceAssistant() {
             exit={{ opacity: 0 }}
             className="text-center py-2"
           >
-            <div className="inline-flex p-3 bg-zinc-900 border border-zinc-805 text-[#dfabeb] rounded-full mb-3 shadow-inner">
-              <Sparkles className="w-5 h-5 text-[#dfabeb]" />
+            <div className="inline-flex p-3 bg-zinc-50 border border-zinc-200 text-[#330e53] rounded-full mb-3 shadow-xs">
+              <Sparkles className="w-5 h-5 text-[#330e53]" />
             </div>
             
-            <p className="text-xs font-mono text-zinc-400 tracking-widest mb-1">
+            <p className="text-xs font-mono text-zinc-500 tracking-widest mb-1">
               Your Recommended Match
             </p>
             
-            <h3 className="text-2xl sm:text-3xl font-display font-medium text-white mb-2">
+            <h3 className="text-2xl sm:text-3xl font-display font-bold text-zinc-950 mb-2">
               {isZeplite ? "Zeplite (Tirzepatide)" : "Semalite (Semaglutide)"}
             </h3>
 
-            <span className="inline-block py-1 px-3.5 bg-zinc-900 border border-[#dfabeb]/40 text-[#dfabeb] rounded-full text-xs font-semibold mb-4 shadow-sm">
+            <span className="inline-block py-1 px-3.5 bg-purple-50 border border-[#330e53]/20 text-[#330e53] rounded-full text-xs font-semibold mb-4 shadow-2xs">
               {isZeplite ? "Double-Agonist Flagship" : "Proven Global Standard"}
             </span>
 
-            <div className="max-w-md mx-auto text-sm text-zinc-350 space-y-4 mb-6 text-left bg-zinc-900/45 border border-zinc-800 p-5 rounded-2xl shadow-inner">
+            <div className="max-w-md mx-auto text-sm space-y-4 mb-6 text-left bg-zinc-50 border border-zinc-200 p-5 rounded-2xl shadow-xs">
               {isZeplite ? (
                 <>
-                  <p className="text-zinc-200">
-                    Based on your focus on **maximum therapy outcomes** and flagship performance, <strong className="text-white">Zeplite</strong> is your match.
+                  <p className="text-zinc-800 font-medium">
+                    Based on your focus on maximum therapy outcomes and flagship performance, <strong className="text-zinc-950">Zeplite</strong> is your match.
                   </p>
-                  <p className="text-xs text-zinc-400 leading-normal">
+                  <p className="text-xs text-zinc-600 leading-normal">
                     Zeplite works with twin receptors in the body for unparalleled appetite control, quietening persistent "food noise" so you remain naturally satisfied.
                   </p>
                 </>
               ) : (
                 <>
-                  <p className="text-zinc-200">
-                    Based on your focus on **established global safety** and exceptional value, <strong className="text-white">Semalite</strong> is your match.
+                  <p className="text-zinc-800 font-medium">
+                    Based on your focus on established global safety and exceptional value, <strong className="text-zinc-950">Semalite</strong> is your match.
                   </p>
-                  <p className="text-xs text-zinc-400 leading-normal">
+                  <p className="text-xs text-zinc-600 leading-normal">
                     Semalite uses Semaglutide—the clinical cornerstone of weight loss worldwide—providing consistent, gradual, and thoroughly documented weight-management results.
                   </p>
                 </>
               )}
               
-              <div className="flex items-start gap-2 pt-3 border-t border-zinc-800 text-xs text-zinc-500">
-                <AlertCircle className="w-4 h-4 text-[#dfabeb] shrink-0 mt-0.5" />
+              <div className="flex items-start gap-2 pt-3 border-t border-zinc-200 text-xs text-zinc-600">
+                <AlertCircle className="w-4 h-4 text-[#330e53] shrink-0 mt-0.5" />
                 <span>Our medical success team will fully review your history before dispensing.</span>
               </div>
             </div>
@@ -269,7 +269,7 @@ export default function GuidanceAssistant() {
                 href={isZeplite ? BRAND_CONFIG.zepliteStoreUrl : BRAND_CONFIG.semaliteStoreUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 py-3 px-6 rounded-full text-xs font-bold text-black bg-white hover:bg-[#dfabeb] active:scale-95 transition-all text-center font-display shadow-md cursor-pointer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 py-3 px-6 rounded-full text-xs font-bold text-white bg-[#330e53] hover:bg-[#43146d] active:scale-95 transition-all text-center font-display shadow-md cursor-pointer"
               >
                 <ShoppingBag className="w-4 h-4" />
                 <span>Shop {isZeplite ? "Zeplite" : "Semalite"}</span>
@@ -279,7 +279,7 @@ export default function GuidanceAssistant() {
                 href={customWhatsAppUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 py-3 px-6 rounded-full text-xs font-semibold text-emerald-300 bg-emerald-950/40 hover:bg-emerald-950 border border-emerald-900/50 active:scale-95 transition-all text-center cursor-pointer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 py-3 px-6 rounded-full text-xs font-semibold text-zinc-800 bg-white hover:bg-zinc-50 border border-zinc-200 active:scale-95 transition-all text-center cursor-pointer shadow-xs"
               >
                 <svg
                   className="w-4 h-4 shrink-0 fill-current text-[#25D366]"
@@ -294,7 +294,7 @@ export default function GuidanceAssistant() {
 
             <button
               onClick={handleReset}
-              className="mt-6 inline-flex items-center gap-1.5 text-xs text-zinc-500 hover:text-zinc-300 transition-colors cursor-pointer"
+              className="mt-6 inline-flex items-center gap-1.5 text-xs text-zinc-500 hover:text-zinc-800 transition-colors cursor-pointer"
             >
               <RefreshCw className="w-3 h-3" />
               <span>Retake assessment</span>

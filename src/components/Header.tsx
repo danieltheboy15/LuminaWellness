@@ -9,30 +9,29 @@ export default function Header() {
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-zinc-200/70 px-4 sm:px-6 lg:px-8 shadow-xs"
+      className="sticky top-0 z-50 w-full bg-[#330e53] border-b border-[#4a1677] px-4 sm:px-6 lg:px-8 shadow-md"
     >
       <div className="max-w-6xl mx-auto h-20 flex items-center justify-between">
         {/* Brand Logo & Name */}
         <a id="brand-logo-link" href="#" className="flex items-center gap-3 active:scale-95 transition-transform group">
           <div className="relative">
-            <div className="absolute inset-0 bg-[#dfabeb]/25 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-all duration-300" />
             <img
               id="brand-logo-img"
-              src="https://res.cloudinary.com/dpsvazol5/image/upload/v1781967772/IMG_0930_s4oews-removebg-preview_zeu4rg.png"
+              src="https://res.cloudinary.com/dpsvazol5/image/upload/v1789121091/WhatsApp_Image_2026-09-11_at_10.44.41_AM-removebg-preview_r6iwmj.png"
               alt="Lumina Wellness Logo"
-              className="h-12 sm:h-14 w-auto object-contain cursor-pointer filter contrast-125 saturate-110 relative z-10 transition-transform duration-300 group-hover:scale-105"
+              className="h-[94px] sm:h-[110px] w-auto object-contain cursor-pointer relative z-10 transition-transform duration-300 group-hover:scale-105 -my-3 sm:-my-4"
               referrerPolicy="no-referrer"
             />
           </div>
         </a>
 
         {/* Navigation / Quick Actions */}
-        <div className="hidden md:flex items-center gap-6 text-xs font-semibold text-zinc-600">
-          <a href="#who-we-are" className="hover:text-zinc-950 transition-colors">Who We Are</a>
-          <a href="#our-products-section" className="hover:text-zinc-950 transition-colors">Lumina Tirz-Pen</a>
-          <a href="#how-it-works-section" className="hover:text-zinc-950 transition-colors">How It Works</a>
-          <a href="#why-people-choose-lumina" className="hover:text-zinc-950 transition-colors">Why Lumina</a>
-          <a href="#faq-section" className="hover:text-zinc-950 transition-colors">FAQ</a>
+        <div className="hidden md:flex items-center gap-6 text-xs font-semibold text-purple-200/90">
+          <a href="#who-we-are" className="hover:text-white transition-colors">Who We Are</a>
+          <a href="#our-products-section" className="hover:text-white transition-colors">Lumina Tirz-Pen</a>
+          <a href="#how-it-works-section" className="hover:text-white transition-colors">How It Works</a>
+          <a href="#why-people-choose-lumina" className="hover:text-white transition-colors">Why Lumina</a>
+          <a href="#faq-section" className="hover:text-white transition-colors">FAQ</a>
         </div>
 
         {/* Global CTAs */}
@@ -59,10 +58,10 @@ export default function Header() {
             href={BRAND_CONFIG.whatsappShopUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 py-2 px-4 sm:px-5 rounded-full text-xs font-bold text-black bg-[#dfabeb] hover:bg-[#d598e3] transition-all cursor-pointer shadow-xs font-display"
+            className="flex items-center justify-center gap-2 py-2 px-4 sm:px-5 rounded-full text-xs font-bold text-[#330e53] bg-white hover:bg-purple-50 active:scale-95 transition-all cursor-pointer shadow-sm font-display"
           >
-            <ShoppingBag className="w-3.5 h-3.5 shrink-0" />
-            <span className="font-sans">Shop Now</span>
+            <ShoppingBag className="w-3.5 h-3.5 shrink-0 text-[#330e53]" />
+            <span className="font-sans font-bold">Shop Now</span>
           </a>
         </div>
       </div>

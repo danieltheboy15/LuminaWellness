@@ -29,7 +29,7 @@ export default function StickyControls() {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
           transition={{ type: "spring", stiffness: 260, damping: 25 }}
-          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-md bg-zinc-950/95 backdrop-blur-xl border border-zinc-800 rounded-full shadow-[0_20px_50px_rgba(0,0,0,0.6)] p-2 flex items-center justify-between gap-2"
+          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-md bg-white/95 backdrop-blur-xl border border-zinc-200 rounded-full shadow-[0_15px_40px_rgba(0,0,0,0.12)] p-2 flex items-center justify-between gap-2"
         >
           {/* WhatsApp Quick Action */}
           <a
@@ -37,7 +37,7 @@ export default function StickyControls() {
             href={BRAND_CONFIG.whatsappConsultUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-full text-xs font-semibold text-white bg-zinc-900 hover:bg-zinc-850 border border-zinc-800 active:scale-95 transition-all text-center cursor-pointer"
+            className="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-full text-xs font-semibold text-zinc-800 bg-zinc-50 hover:bg-zinc-100 border border-zinc-200 active:scale-95 transition-all text-center cursor-pointer shadow-2xs"
           >
             <MessageCircle className="w-4 h-4 text-[#25D366]" />
             <span>Consultation</span>
@@ -49,9 +49,9 @@ export default function StickyControls() {
             href={BRAND_CONFIG.whatsappShopUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-full text-xs font-bold text-black bg-[#dfabeb] hover:bg-[#d598e3] active:scale-95 transition-all text-center font-display cursor-pointer shadow-sm"
+            className="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-full text-xs font-bold text-white bg-[#330e53] hover:bg-[#43146d] active:scale-95 transition-all text-center font-display cursor-pointer shadow-sm"
           >
-            <ShoppingBag className="w-4 h-4 text-black" />
+            <ShoppingBag className="w-4 h-4 text-white" />
             <span>Shop Now</span>
           </a>
         </motion.div>

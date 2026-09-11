@@ -6,6 +6,7 @@ export const BRAND_CONFIG = {
   name: "Lumina Wellness",
   productName: "Lumina Tirz-Pen",
   domain: "www.luminawellness.ng",
+  logoUrl: "https://res.cloudinary.com/dpsvazol5/image/upload/v1789121091/WhatsApp_Image_2026-09-11_at_10.44.41_AM-removebg-preview_r6iwmj.png",
   phone: "09072081918",
   whatsappNumberFormatted: "2349072081918",
   
@@ -22,4 +23,6 @@ export const BRAND_CONFIG = {
   
   // Store fallback (direct to WhatsApp as requested)
   catlogStoreUrl: "https://wa.me/2349072081918?text=Hi%20Lumina%20Wellness%20%F0%9F%91%8B!%20I%27d%20like%20to%20view%20prices%20and%20order%20the%20Lumina%20Tirz-Pen.",
+  zepliteStoreUrl: "https://wa.me/2349072081918?text=Hi%20Lumina%20Wellness%20%F0%9F%91%8B!%20I%27d%20like%20to%20view%20prices%20and%20order%20Zeplite.",
+  semaliteStoreUrl: "https://wa.me/2349072081918?text=Hi%20Lumina%20Wellness%20%F0%9F%91%8B!%20I%27d%20like%20to%20view%20prices%20and%20order%20Semalite.",
 };

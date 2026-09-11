@@ -15,7 +15,7 @@ import IntakePopup from "./components/IntakePopup";
 
 export default function App() {
   return (
-    <div className="mesh-gradient min-h-screen relative text-zinc-900 font-sans selection:bg-[#dfabeb]/40 selection:text-zinc-950">
+    <div className="mesh-gradient min-h-screen relative text-zinc-900 font-sans selection:bg-[#330e53]/20 selection:text-[#330e53]">
       {/* 10-second Delay Clinical Intake Form Popup */}
       <IntakePopup />
 

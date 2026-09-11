@@ -12,11 +12,11 @@ export default function PreFAQBanner() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="relative w-full max-w-[809px] aspect-[809/1080] rounded-3xl overflow-hidden border border-zinc-200/90 shadow-2xl bg-zinc-950 group"
+          className="relative w-full max-w-[809px] aspect-[809/1080] rounded-3xl overflow-hidden border border-zinc-200 shadow-xl bg-white group"
           style={{ maxHeight: "1080px" }}
         >
           {/* Subtle brand glow highlight */}
-          <div className="absolute -inset-1 bg-gradient-to-r from-[#dfabeb]/25 via-purple-500/15 to-[#dfabeb]/25 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition duration-700 pointer-events-none" />
+          <div className="absolute -inset-1 bg-gradient-to-r from-[#330e53]/15 via-[#521884]/10 to-[#330e53]/15 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition duration-700 pointer-events-none" />
 
           <img
             id="pre-faq-featured-image"
